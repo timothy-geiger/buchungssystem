@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f2f2f2;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 420px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #333;
+}
+
+.error {
+  color: darkred;
+  margin-top: 10px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+li button {
+  margin-left: 10px;
+  width: auto;
+  padding: 4px 8px;
+}
+
+.fc {
+  margin-top: 20px;
+}
+
+.fc-event {
+  font-size: 0.85rem;
+}
+
+/* applies ONLY to disabled background events */
+.fc-bg-event.fc-disabled-range {
+  background: repeating-linear-gradient(
+    45deg,
+    #f0f0f0,
+    #f0f0f0 6px,
+    #e6e6e6 6px,
+    #e6e6e6 12px
+  ) !important;
+  opacity: 0.6;
+}
+
+.fc-slot-disabled * {
+  pointer-events: none;
+}
